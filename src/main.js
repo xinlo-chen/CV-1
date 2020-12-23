@@ -2,15 +2,16 @@ let html = document.querySelector("#html");
 let style = document.querySelector("#style");
 
 let string = `/* 你好，我叫小陈
- * 接下来我演示以下我的前端功底
- * 首先我要准备一个div
+ * 接下来我演示一下我的前端功底
+ * 我将在线演示如何画一个八卦图
+ * 首先我需要要准备一个div
  */
 #div1{
     border: 1px solid red;
     width: 200px;
     height: 200px;
 }
-/* 接下来我把 div 变成一个八卦图
+/* 接下来我会把这个 div 变成一个八卦图
  * 注意看好了
  * 首先，把 div 变成一个圆
  */
@@ -19,13 +20,14 @@ let string = `/* 你好，我叫小陈
     box-shadow: 0 0 3px rgba(0,0,0,0.5);
     border: none;
 }
-/* 八卦是阴阳形成的
- * 一黑一白
+/* 八卦是由阴阳形成的
+ * 一半黑一半白
  */
 #div1{
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
 }
-/* 加两个圆圈 
+/* 然后我再加两个神奇的圆圈 
+ * 这样
  */
 #div1::before {
     width: 100px;
@@ -37,6 +39,8 @@ let string = `/* 你好，我叫小陈
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
 }
+/* 然后在这样
+ */
 #div1::after {
     width: 100px;
     height: 100px;
@@ -47,6 +51,8 @@ let string = `/* 你好，我叫小陈
     border-radius: 50%;
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
 }
+/* 好啦
+ * 一个简单的八卦图就画好啦！
 `;
 let string2 = ""
 let n = 0
@@ -68,6 +74,6 @@ let step = () => {
             n += 1
             step();
         }
-    }, 50);
+    }, 40);
 };
 step();
