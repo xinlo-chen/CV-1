@@ -39,7 +39,7 @@ let string = `/* 你好，我叫小陈
     border-radius: 50%;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
 }
-/* 然后在这样
+/* 然后再这样
  */
 #div1::after {
     width: 100px;
@@ -53,6 +53,8 @@ let string = `/* 你好，我叫小陈
 }
 /* 好啦
  * 一个简单的八卦图就画好啦！
+ * 你学会了吗？
+ */
 `;
 let string2 = ""
 let n = 0
